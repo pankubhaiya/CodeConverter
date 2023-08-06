@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+  
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  /* color: white; */
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 50px;
+  height: 3px;
+ 
+}
+
+/* @keyframes underline {
+  0%, 100% {
+      width: 50px;
+  }
+  50% {
+      width: 150px;
+  }
+} */
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 3s forwards;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the text is not visible outside its containing element */
+  border-right: 0.15em solid #c4c5c6; /* Creates the typewriter cursor effect */
+  white-space: nowrap; /* Prevents wrapping to new lines */
+  letter-spacing: 0.15em; /* Adjust the spacing between letters for a coding feel */
+  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0; /* Start with 0 width (i.e., invisible) */
+  }
+  to {
+    width: 100%; /* End with 100% width (i.e., fully typed) */
+  }
+}
+
+/* Blinking caret animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; /* Invisible caret */
+  }
+  50% {
+    border-color: #ccced0; /* Visible caret */
+  }
+}
+
+.btnDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:5rem;
+  margin-top: 4rem;
+}
+button{
+ padding:8px;
+ border:none;
+ border-radius: 10px;
+ font-size: 16.5px;
+ font-weight: bold;
+}
+
+button:hover{
+  font-size: 17px;
+  cursor:pointer
+}
+
+.btnCont{
+  width:20rem;
+  /* display: flex;
+  justify-content: space-between; */
+  margin-top: 1rem;
+  
+}
+
+.output-cont{
+  margin-top: 1rem;
+  width:35rem;
+  height:30rem;
+  background-color: rgb(50, 49, 49);
+  color:white;
+  overflow-y: auto;
+  padding:10px;
+}
+
+.lang-selector{
+  padding:8px;
+ border:none;
+ border-radius: 10px;
+ font-size: 16.5px;
+ font-weight: bold;
+ width:20rem;
+
+}
+.markdown{
+  /* border: 1px dashed #C1ECE4; */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width:35rem;
+ font-size: 14px;
+  padding: 1rem;
+  resize: none;
+  margin-top: 10px;
+  background-color: #282c34;
+  color: #fff;
+}
