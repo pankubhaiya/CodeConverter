@@ -4,7 +4,6 @@ CodeConverter is a versatile tool that allows you to easily convert code from on
 
 ## Table of Contents
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
