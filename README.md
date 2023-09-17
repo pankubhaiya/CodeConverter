@@ -7,9 +7,6 @@ CodeConverter is a versatile tool that allows you to easily convert code from on
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 ### Code Conversion
